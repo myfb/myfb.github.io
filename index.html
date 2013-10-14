@@ -1,99 +1,73 @@
 ---
 layout: default
 ---
-<div class="tamlan">
-  <div class="bungkus-pid" id="bungkus-pid1" style="display:none">
-    <div class="garis-atas"></div>
-    <div class="isi-pid" id="isi-bungkus-pid1">
-      <div id="tempat-aktor"></div>
-      <div id="panel-konsol" style="margin:0 0 7px;display:none">
-        <div style="display:table-cell;margin:0 0 14px 0;padding-top:14px">
-          <textarea id="masukan-pesan" onclick="if($(this).val()=='Your Message..'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Your Message..')}" style="display:block;padding:0;border:1px dashed #999999;width:379px;resize:none;background:none">Your Message..</textarea>
-          <div id="tempat-lampiran" class="attch" style="display:none;min-height:100px;margin-top:10px;margin-bottom:10px">
-            <img id="gbr-lampiran" src="http://4.bp.blogspot.com/-alBhQnLM3Pw/T0td1RjZV6I/AAAAAAAAAk4/8OnntvMQ39E/s72-c/images.jpg" style="max-width:90px;max-height:90px;margin-right:10px;float:left">
-            <div style="color:gray;display:table-cell">
-              <input id="masukan-lp-name" value="Attachment Name" onclick="if($(this).val()=='Attachment Name'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Attachment Name')}" style="display:block;border:1px dashed #999999;font-weight:bold;color:#3b5998;padding:0;width:297px;margin:0" type="text">
-              <input id="masukan-lp-kapsen" value="Attachment Caption" onclick="if($(this).val()=='Attachment Caption'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Attachment Caption')}" style="display:block;border:1px dashed #999999;color:gray;padding:0;width:297px;margin:0" type="text">
-              <div style="margin-top:5px">
-                <textarea id="masukan-lp-deskripsen" onclick="if($(this).val()=='Attachment Description'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Attachment Description')}" style="display:block;color:gray;padding:0;border:1px dashed #999999;width:297px;resize:none;background:none">Attachment Description</textarea>
-                <div>Source: <span><a href="http://aing-creations-8.blogspot.com/2011/08/post-to-all-friends-in-one-click-eid.html" target="_blank">Aing Creations</a></span></div>
-              </div>
-            </div>
-          </div>
-          <div id="tempat-lampiran2" class="attch" style="display:none;min-height:100px;margin-top:10px;margin-bottom:10px">
-            <div style="color:gray;display:table-cell">
-              <div><input id="masukan-mp3-uri" value="Mp3 URL" onclick="if($(this).val()=='Mp3 URL'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Mp3 URL')}" style="border:1px dashed #999999;font-weight:bold;color:#3b5998;padding:0;width:379px;margin:0" type="text"></div>
-              <div><input id="masukan-mp3-ja" value="Artist - Title" onclick="if($(this).val()=='Artist - Title'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Artist - Title')}" style="border:1px dashed #999999;color:gray;padding:0;width:379px;margin:0" type="text"></div>
-              <div style="margin-top:5px">
-                <div>Source: <span><a href="http://aing-creations-8.blogspot.com/2011/08/post-to-all-friends-in-one-click-eid.html" target="_blank">Aing Creations</a></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="puter-lampiran" style="text-align:right;min-height:16px;color:rgb(153, 153, 153)"><span style="vertical-align:middle">This will Post to ID:</span> <input id="masukan-target-id" onclick="if($(this).val()==ptafioc.dataUser.username){$(this).select()}" onchange="if($(this).val()==''){$(this).val(ptafioc.dataUser.username)}" style="width:150px;padding:0;vertical-align:middle;text-align:center" type="text"></div>
-        <div id="puter-lampiran2" style="text-align:right;min-height:16px;color:rgb(153, 153, 153);display:none"></div>
-      </div>
-      <div id="panel-kontrol" style="display:none">
-        <input id="masukan-swf-src" class="attch" value="SWF URL" onclick="if($(this).val()=='SWF URL'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('SWF URL')}" style="display:none;border:1px dashed #999999;color:gray;padding:0;width:379px;margin:0 0 3px" type="text">
-        <input id="masukan-ling-uri" class="attch" value="Attachment Link" onclick="if($(this).val()=='Attachment Link'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Attachment Link')}" style="display:none;border:1px dashed #999999;color:gray;padding:0;width:379px;margin:0 0 3px" type="text">
-        <input id="masukan-gbr-uri" class="attch" value="Picture URL" onclick="if($(this).val()=='Picture URL'){$(this).select()}" onchange="if($(this).val()==''){$(this).val('Picture URL')}" style="display:none;border:1px dashed #999999;color:gray;padding:0;width:379px;margin:0 0 3px" type="text">
-        <div class="like-panel">
-          <div style="float:right">
-          <select id="post-mode" onchange="ptafioc.posMode()"><option value="tuolgrup">Post to All Groups</option><option value="tuolpren">Post to All Friends</option><option selected="" value="tuaydi">Post to ID</option><option value="tuoladmgrup">Post to All My Administrated Groups</option></select>
-          <span class="tombol" onclick="ptafioc.letsGo()" style="line-height:10px">Go!</span>
-          </div>
-          <div style="float:left">
-          <select id="kontrol-mode" onchange="ptafioc.kontrolMode()"><option selected="" value="noat">No Attachment</option><option value="stat">Standard Attachment</option><option value="gbat">Picture</option><!--<option value="mpat">Mp3</option>--><option value="swat">SWF</option></select>
-          </div>
-          <div style="clear:both"></div>
-        </div>
-      </div>
-      <div id="tempat-laporan" style="display:none"></div>
-      <div style="clear:both"></div>
-    </div>
-    <i class="gamar-panah"></i><div class="garis-bawah"></div>
-  </div>
 
-  <div class="bungkus-pid" id="bungkus-pid2" style="min-height:25px;display:none">
-    <div class="garis-atas"></div>
-    <div class="isi-pid" id="isi-bungkus-pid2">
-      <div id="result2" style="float:right"></div><div id="result"><center>Waiting for page to finished loading..<br>Just a minute :)</center></div><div style="clear:both"></div>
-    </div>
-    <i class="gamar-panah"></i><div class="garis-bawah"></div>
-  </div>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '116735365189212', // App ID
+    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+    status     : true, // check login status
+    cookie     : true, // enable cookies to allow the server to access the session
+    xfbml      : true  // parse XFBML
+  });
 
-  <div class="bungkus-pid" id="bungkus-pid3" style="min-height:25px;display:none">
-    <div class="garis-atas"></div>
-    <div class="isi-pid" id="isi-bungkus-pid3"></div>
-    <i class="gamar-panah"></i><div class="garis-bawah"></div>
-  </div>
+  // Here we subscribe to the auth.authResponseChange JavaScript event. This event is fired
+  // for any authentication related change, such as login, logout or session refresh. This means that
+  // whenever someone who was previously logged out tries to log in again, the correct case below 
+  // will be handled. 
+  FB.Event.subscribe('auth.authResponseChange', function(response) {
+    // Here we specify what we do with the response anytime this event occurs. 
+    if (response.status === 'connected') {
+      // The response object is returned with a status field that lets the app know the current
+      // login status of the person. In this case, we're handling the situation where they 
+      // have logged in to the app.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // In this case, the person is logged into Facebook, but not into the app, so we call
+      // FB.login() to prompt them to do so. 
+      // In real-life usage, you wouldn't want to immediately prompt someone to login 
+      // like this, for two reasons:
+      // (1) JavaScript created popup windows are blocked by most browsers unless they 
+      // result from direct interaction from people using the app (such as a mouse click)
+      // (2) it is a bad experience to be continually prompted to login upon page load.
+      FB.login();
+    } else {
+      // In this case, the person is not logged into Facebook, so we call the login() 
+      // function to prompt them to do so. Note that at this stage there is no indication
+      // of whether they are logged into the app. If they aren't then they'll see the Login
+      // dialog right after they log in to Facebook. 
+      // The same caveats as above apply to the FB.login() call here.
+      FB.login();
+    }
+  });
+  };
 
-  <div class="bungkus-pid" id="bungkus-pid4" style="min-height:25px">
-    <div class="garis-atas"></div>
-    <div class="isi-pid" id="isi-bungkus-pid4">
-      <label for="masukan-app-id">Get an Access Token from your own Facebook <b>Application ID</b>:</label>
-      <div style="text-align:right;margin-bottom:10px">
-        <a href="" onclick="$('#masukan-app-id').val(ptafioc.acak(ptafioc.aspespes));return false" style="vertical-align:middle;font-size:10px">Rand</a>
-        <input id="masukan-app-id" onfocus="this.select()" value="" style="width:150px;text-align:center;padding:0" type="text">
-        <span class="tombol-putih" onclick="ptafioc.getToken()">Get Token</span>
-      </div>
-      <label for="masukan-akses-token">Or Insert any <b>Access Token</b> you allready have:</label>
-      <div style="text-align:right">
-        <input id="masukan-akses-token" onchange="ptafioc.potongToken()" onclick="this.select()" value="" style="width:300px;text-align:center;padding:0" type="text">
-        <span class="tombol" onclick="ptafioc.lodToken()">Load Now</span>
-      </div>
-    </div>
-    <i class="gamar-panah"></i><div class="garis-bawah"></div>
-  </div>
+  // Load the SDK asynchronously
+  (function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+  }(document));
 
-  <div style="float:right;display:none" id="tombol-bawah"></div>  
+  // Here we run a very simple test of the Graph API after login is successful. 
+  // This testAPI() function is only called in those cases. 
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Good to see you, ' + response.name + '.');
+    });
+  }
+</script>
 
-  <div class="bungkus-pid" id="bungkus-pid5" style="min-height:25px;display:none;opacity:0.0">
-    <div class="garis-atas"></div>
-    <div class="isi-pid" id="isi-bungkus-pid5"><div style="float:right" class="tombol" onclick="ptafioc.pedot(['#bungkus-pid5'],function(){$('.erkon-show').show()})">Hide</div><h3 style="clear:both">Error Console</h3><div id="judul-error-konsol"></div><pre id="error-konsol"></pre></div>
-    <i class="gamar-panah"></i><div class="garis-bawah"></div>
-  </div>
+<!--
+  Below we include the Login Button social plugin. This button uses the JavaScript SDK to
+  present a graphical Login button that triggers the FB.login() function when clicked.
 
-</div>
+  Learn more about options for the login button plugin:
+  /docs/reference/plugins/login/ -->
 
-<div style="clear:both;padding:5px"></div>
+<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
