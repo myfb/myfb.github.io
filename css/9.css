@@ -1,8 +1,12 @@
+  body {
+    color: #eee;
+  }
+  
 .post-body{background-color:transparent}
 .post-body .araraneh, .post-body .acus{display:inline-block; vertical-align:middle; -moz-border-radius:3px; border-radius:3px}
 .post-body .araraneh{float:right; background-color:#E1E6EE; border:1px solid #99A8C7; padding:4px; text-align:center; margin:2px; color:black; -moz-text-shadow:none; text-shadow:none}
 
-.tamlan{opacity:0.9;margin:auto;width:427px;background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yD/r/N8eF8pLkCCD.png) repeat-y scroll right top transparent;font-size:11px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;color:rgb(51, 51, 51);text-align:left;line-height:1.28}
+.tamlan{opacity:0.9;margin:auto;width:100%;background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yD/r/N8eF8pLkCCD.png) repeat-y scroll right top transparent;font-size:11px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;color:rgb(51, 51, 51);text-align:left;line-height:1.28}
 .tamlan pre{background-color:#333333;font-size:10px;max-height:300px;overflow:auto}
 .tamlan a{cursor:pointer;color:#3b5998;-moz-outline-style:none;text-decoration:none}
 .tamlan a:hover{text-decoration:underline}
@@ -18,9 +22,7 @@
 .tamlan .like-panel{padding:8px 13px 5px;margin:-12px 0 0 -12px;width:377px;top:12px;position:relative;background-color:rgb(237, 239, 244)}
 .tamlan .like-panel i{background-image:url('http://static.ak.fbcdn.net/rsrc.php/v1/yZ/r/E75W0JjLn8o.png');background-repeat:no-repeat;background-position:-14px -156px;height:13px;display:block;left:0;position:absolute;top:-1px;width:14px}
 .tamlan .like-panel .jmlh-like{float:right;margin-left:5px;padding-left:18px;position:relative}
-  body {
-    color: #eee;
-  }
+
 .tamlan input, .tamlan select{color:gray;border:1px solid #ADD8E6;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size:11px;padding:2px;vertical-align:middle}
 .tamlan select{padding:0;cursor:pointer}
 .tamlan .tombol, .tamlan .tombol-putih{background:#5B74A8 url(http://3.bp.blogspot.com/-VgULOlYqfSA/UCOzuUpcL2I/AAAAAAAABOI/gf2VuEnlRPE/s1600/0VDksn8o5BR.png) no-repeat scroll 0 0;border-color:#29447E #29447E #1A356E;border-radius:3px;border-style:solid;border-width:1px;box-shadow:0 1px 0 rgba(0,0,0,0.1);color:#FFF;cursor:pointer;display:inline-block;font-size:11px;font-weight:700;line-height:11px;padding:3px 6px;text-align:center;vertical-align:middle;white-space:nowrap}
