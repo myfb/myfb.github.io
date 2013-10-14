@@ -6,7 +6,7 @@
 .post-body .araraneh, .post-body .acus{display:inline-block; vertical-align:middle; -moz-border-radius:3px; border-radius:3px}
 .post-body .araraneh{float:right; background-color:#E1E6EE; border:1px solid #99A8C7; padding:4px; text-align:center; margin:2px; color:black; -moz-text-shadow:none; text-shadow:none}
 
-.tamlan{opacity:0.9;margin:auto;width:100%;background:url(http://static.ak.fbcdn.net/rsrc.php/v1/yD/r/N8eF8pLkCCD.png) repeat-y scroll right top transparent;font-size:11px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;color:rgb(51, 51, 51);text-align:left;line-height:1.28}
+.tamlan{opacity:0.9;margin:auto;width:100%;font-size:11px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;color:rgb(51, 51, 51);text-align:left;line-height:1.28}
 .tamlan pre{background-color:#333333;font-size:10px;max-height:300px;overflow:auto}
 .tamlan a{cursor:pointer;color:#3b5998;-moz-outline-style:none;text-decoration:none}
 .tamlan a:hover{text-decoration:underline}
