@@ -1,69 +1,3 @@
-.content{padding-bottom:25px}
-.fb_iframe_widget iframe{position:relative}
-html body .list-archive2{-moz-border-radius:7px 7px 0 0;-webkit-border-radius:7px 7px 0 0;-goog-ms-border-radius:7px 7px 0 0;border-radius:7px 7px 0 0;display:inline-block; padding:3px 5px 0;text-decoration:none}
-html body .list-archive2-pasip{background-image:none;border:1px solid #333333;border-bottom:none;cursor:pointer;color:#999999}
-html body .list-archive2-pasip:hover{background-color:rgba(0,0,0,0.5);border-color:#999999;border-bottom:none;color:#cccccc}
-html body .list-archive2-aktip{background-color:rgba(0,0,0,0.5);border:1px outset #999999;border-bottom:none;cursor:default;color:orange}
-.post-header-line-line a.tombol, #comments h4 a.tombol, .comment-button a.tombol, p.comment-footer a{
-  padding:2px 4px 2px 22px; margin-right:6px;
-  background:#ECEEF5 url(http://2.bp.blogspot.com/-8njvN2Z648I/T7swgbqfNcI/AAAAAAAABIg/i8W7-RnDxMQ/s1600/small_icon_blogger.gif) no-repeat scroll 4px 2px;
-  color:#3b5998; border:1px solid #cad4e7; font-size:11px; line-height:14px; vertical-align:middle;
-}
-.post-header-line-line a.tombol:hover, #comments h4 a.tombol:hover, .comment-button a.tombol:hover, p.comment-footer a:hover{background-color:#ebedf4;border-color:#9dacce}
-.post-body,.post-header{clear:both}
-.nub{float:left;position:relative;z-index:2;height:0;width:5px;top:4px;left:-4px}
-.nub s,.nub i{border:solid transparent;border-right-color:#d7d7d7;border-width:4px 5px 4px 0;top:1px;display:block;position:relative}
-.nub i{left:2px;top:-7px;border-right-color:#fff}
-.count{font-size:11px;color:black;background:#fff;border:1px solid #d1d1d1;float:left;font-weight:normal;height:14px;margin-left:1px;min-width:15px;padding:1px 2px 1px 2px;text-align:center;line-height:14px;white-space:nowrap}
-.content-outer{margin-bottom:150px}
-.post-header-line-line,#polower-piksid{position:fixed;width:auto;height:auto;bottom:-1px;right:0px;z-index:99}
-.post-header-line-line .operleypijit{padding:5px 5px 3px 5px}
-.post-header-line-line .gambar-author,.post-header-line-line .authorbox-category,.post-header-line-line .published-date,.post-header-line-line .posted-by{display:none}
-.post-header-line-line .posted-by b{font-size:120%}
-.post-header-line-line table td{vertical-align:top}
-.post-header-line-line .fb-like{display:inline-block; vertical-align:middle; width:140px; height:20px; overflow:show; background:transparent; padding:0; margin:0; border:none}
-.post-header-line-line .published-date div{display:inline-block;vertical-align:middle;margin-right:5px}
-.post-header-line-line .comment-button{opacity:0.0}
-
-#sittingthere .risen{
-  background-color:rgba(0,0,0,0.5);
-  border-radius:7px;
-  position:relative;
-  margin:1px auto;
-  overflow:hidden;
-  font-size:11px;
-  font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
-  color:#cccccc;
-  text-align:left;
-  line-height:1.28;
-}
-#sittingthere .klos{
-  display:none;
-  position:absolute;
-  right:5px;
-  top:5px;
-  z-index:5;
-  cursor:pointer;
-  width:15px;
-  height:15px;
-  background:transparent url(http://static.ak.fbcdn.net/rsrc.php/v1/yA/r/4WSewcWboV8.png) no-repeat scroll 0px -16px;
-}
-#sittingthere code{
-  font-size:10px;
-  font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
-}
-.feed-links{display:none}
-.Profile .widget-content ul, .post-header-line-1{display:none}
-#buat-notip #notip{
-background-color: #f03d25;
-border: 1px solid #d83722;
-border-bottom: 1px solid #c0311e;
-border-top: 1px solid #e23923;
-border-radius: 2px;
-box-shadow: 0 1px 0 rgba(0, 39, 121, .77);
-padding: 0 1px;
-}
-
 .post-body{background-color:transparent}
 .post-body .araraneh, .post-body .acus{display:inline-block; vertical-align:middle; -moz-border-radius:3px; border-radius:3px}
 .post-body .araraneh{float:right; background-color:#E1E6EE; border:1px solid #99A8C7; padding:4px; text-align:center; margin:2px; color:black; -moz-text-shadow:none; text-shadow:none}
@@ -90,4 +24,3 @@ body{background:#333 url(http://i00.i.aliimg.com/wsphoto/v0/673991386_1/Real-Han
 .tamlan .tombol, .tamlan .tombol-putih{background:#5B74A8 url(http://3.bp.blogspot.com/-VgULOlYqfSA/UCOzuUpcL2I/AAAAAAAABOI/gf2VuEnlRPE/s1600/0VDksn8o5BR.png) no-repeat scroll 0 0;border-color:#29447E #29447E #1A356E;border-radius:3px;border-style:solid;border-width:1px;box-shadow:0 1px 0 rgba(0,0,0,0.1);color:#FFF;cursor:pointer;display:inline-block;font-size:11px;font-weight:700;line-height:11px;padding:3px 6px;text-align:center;vertical-align:middle;white-space:nowrap}
 .tamlan .tombol:hover, .tamlan .tombol-putih{background-color:#eee;background-position:0 -147px;border-color:#999 #999 #888;color:#444}
 .tamlan .tombol-putih:hover{background-color:#5B74A8;background-position:0 0;border-color:#29447E #29447E #1A356E;color:#FFF}
-
