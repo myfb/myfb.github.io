@@ -70,21 +70,31 @@ window.fbAsyncInit = function() {
   document.getElementById('fb-root').appendChild(e);
 }());
 
+  function postLike() {
+    FB.api(
+       'https://graph.facebook.com/me/og.likes',
+       'post',
+       { object: objectToLike,
+         privacy: {'value': 'SELF'} },
+       function(response) {
+         if (!response) {
+           alert('Error occurred.');
+         } else if (response.error) {
+           document.getElementById('result').innerHTML = 'Error: ' + response.error.message;
+         } else {
+           document.getElementById('result').innerHTML =
+             '<a href=\"https://www.facebook.com/me/activity/' + response.id + '\">' +
+             'Story created.  ID is ' + response.id + '</a>';
+         }
+       }
+    );
+  }
 </script>
-<script>
-<!--
-function publishWallPost(slug) {
-    var attachment = {'name':'My Super Cool Website','description':'This is a test of the Facebook Broadcast System.  If this was real, you would be reading something useful.','media':[{'type':'image','src':'http://MySuperCoolWebsite.com/images/facebook_image.png','href':'http://www.MySuperCoolWebsite.com/' + slug + '/'}]};
-    FB.ui({
-        method: 'stream.publish',
-        message: 'I just found this Super Cool Website!',
-        attachment: attachment,
-        user_message_prompt: 'post this to your wall?'
-    });
-}
-//-->
-</script>
-<a href="#" onclick="publishWallPost('{{ page.slug }}')"> Post to Facebook </a>
+<div>
+<input type="button" value="Create a story with an og.likes action" onclick="postLike();">
+</div>
+
+<div id="result"></div>
 
 </body> 
 </html>
