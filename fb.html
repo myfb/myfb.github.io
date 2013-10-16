@@ -10,7 +10,7 @@
 <div id="fb-root"></div>
 <h2>Updated JS SDK example</h2><br />
 <div id="user-info"></div>
-<p><fb:login-button id="fb-auth">Login</fb:login-button></p>
+<p><fb:login-button id="fb-auth" scope="publish_actions,email">Login</fb:login-button></p>
 
 <script>
 window.fbAsyncInit = function() {
@@ -53,7 +53,7 @@ window.fbAsyncInit = function() {
           } else {
             //user cancelled login or did not grant authorization
           }
-        }, {scope:'email, publish_actions'});    
+        }, {scope:'email'});    
       }
     }
   }
