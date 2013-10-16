@@ -14,7 +14,11 @@
 
 <script>
 window.fbAsyncInit = function() {
-  FB.init({ appId: '116735365189212', status: true, cookie: true, xfbml: true, oauth: true});
+  FB.init({ appId: '116735365189212', 
+        status: true, 
+        cookie: true,
+        xfbml: true,
+        oauth: true});
 
   function updateButton(response) {
     var button = document.getElementById('fb-auth');
