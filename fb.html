@@ -10,16 +10,11 @@
 <div id="fb-root"></div>
 <h2>Updated JS SDK example</h2><br />
 <div id="user-info"></div>
-<p><fb:login-button id="fb-auth">Login</fb:login-button></p>
-
+<p><button id="fb-auth">Login</button></p>
 
 <script>
 window.fbAsyncInit = function() {
-  FB.init({ appId: '116735365189212', 
-        status: true, 
-        cookie: true,
-        xfbml: true,
-        oauth: true});
+  FB.init({ appId: '116735365189212', status: true, cookie: true, xfbml: true, oauth: true});
 
   function updateButton(response) {
     var button = document.getElementById('fb-auth');
@@ -48,7 +43,7 @@ window.fbAsyncInit = function() {
           var userInfo = document.getElementById('user-info');
           userInfo.innerHTML = 
                 '<img src="https://graph.facebook.com/' 
-            + response.id + '/picture"/>' 
+            + response.id + '/picture" style="margin-right:5px"/>' 
             + response.name;
         });    
           } else {
